@@ -1,0 +1,521 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+    />
+
+    <title>Resume - Muntaha Nazir Dar</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+  
+    <style>
+
+     html {
+      scroll-behavior: smooth;
+     }
+
+        /* header {
+            position:sticky;
+            top:0;
+            left:0;
+            z-index:9;
+            background-color: #111818;
+        } */
+
+        #nav a {
+            position: relative;
+            
+        }
+        #nav>a::after {
+            content: '';
+            width:0%;
+            border-bottom:1.5px solid #019863;
+            position: absolute;
+            bottom:0%;
+            left: 0%;
+            transition:1s all;
+            
+
+            
+        }
+
+        #nav>a:hover::after {
+            width:100%;
+        }
+
+        #btn-pdf {
+            position: relative;
+            
+        }
+
+        #btn-pdf {
+            transition: 3s all;
+            outline:none !important;
+            border:none;
+        }
+
+
+
+        #btn-pdf span:not {
+            opacity: 1;
+        }
+
+        #btn-pdf::before {
+            content:'Here You Go!';
+            position: absolute;
+            opacity:0;
+            color:white;
+            transform: translateX(-40px);
+            transition:0.5s all linear;
+             color: white;
+            font-size: 0.875rem;      
+            font-weight: 500;       
+            line-height: 1.5;   
+        }
+
+        #btn-pdf:hover::before {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+
+        #btn-pdf:hover {
+           color: #019863;
+           transition:0s; 
+           
+        }
+
+        #circul {
+         cursor:pointer;
+        }
+
+        #circul:hover {
+         background: radial-gradient(circle at center, #4F46E5 0%, #0EA5E9 100%);
+         transition:2s all !important;
+        }
+
+        ::selection {
+          color: #019863;
+        }
+
+        #profile {
+          animation: imgrotate 1s 0s forwards ease-in;
+          
+        }
+
+
+        @keyframes imgrotate {
+            0% {
+            transform: translateY(-300px);
+          }
+
+          50% {
+            transform: translateY(0px);
+            
+          }
+
+          75% {
+            transform: translateY(-30px);
+          }
+
+          100% {
+           transform: translateY(0px);
+          }
+        }
+
+        footer {
+          background-color: #111818;
+        }
+
+        
+
+        
+
+
+    </style>
+  </head>
+  <body>
+    <div  id="resume"
+      class="relative flex size-full min-h-screen flex-col bg-[#111818] dark group/design-root overflow-x-hidden"
+      style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="sticky top-0 bg-[#111818] z-50 shadow-md flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#293838] px-10 py-3">
+          <div class="flex items-center gap-4 text-white">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_6_543)">
+                  <path
+                    d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z"
+                    fill="currentColor"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.24189 26.4066C7.31369 26.4411 7.64204 26.5637 8.52504 26.3738C9.59462 26.1438 11.0343 25.5311 12.7183 24.4963C14.7583 23.2426 17.0256 21.4503 19.238 19.238C21.4503 17.0256 23.2426 14.7583 24.4963 12.7183C25.5311 11.0343 26.1438 9.59463 26.3738 8.52504C26.5637 7.64204 26.4411 7.31369 26.4066 7.24189C26.345 7.21246 26.143 7.14535 25.6664 7.1918C24.9745 7.25925 23.9954 7.5498 22.7699 8.14278C20.3369 9.32007 17.3369 11.4915 14.4142 14.4142C11.4915 17.3369 9.32007 20.3369 8.14278 22.7699C7.5498 23.9954 7.25925 24.9745 7.1918 25.6664C7.14534 26.143 7.21246 26.345 7.24189 26.4066ZM29.9001 10.7285C29.4519 12.0322 28.7617 13.4172 27.9042 14.8126C26.465 17.1544 24.4686 19.6641 22.0664 22.0664C19.6641 24.4686 17.1544 26.465 14.8126 27.9042C13.4172 28.7617 12.0322 29.4519 10.7285 29.9001L21.5754 40.747C21.6001 40.7606 21.8995 40.931 22.8729 40.7217C23.9424 40.4916 25.3821 39.879 27.0661 38.8441C29.1062 37.5904 31.3734 35.7982 33.5858 33.5858C35.7982 31.3734 37.5904 29.1062 38.8441 27.0661C39.879 25.3821 40.4916 23.9425 40.7216 22.8729C40.931 21.8995 40.7606 21.6001 40.747 21.5754L29.9001 10.7285ZM29.2403 4.41187L43.5881 18.7597C44.9757 20.1473 44.9743 22.1235 44.6322 23.7139C44.2714 25.3919 43.4158 27.2666 42.252 29.1604C40.8128 31.5022 38.8165 34.012 36.4142 36.4142C34.012 38.8165 31.5022 40.8128 29.1604 42.252C27.2666 43.4158 25.3919 44.2714 23.7139 44.6322C22.1235 44.9743 20.1473 44.9757 18.7597 43.5881L4.41187 29.2403C3.29027 28.1187 3.08209 26.5973 3.21067 25.2783C3.34099 23.9415 3.8369 22.4852 4.54214 21.0277C5.96129 18.0948 8.43335 14.7382 11.5858 11.5858C14.7382 8.43335 18.0948 5.9613 21.0277 4.54214C22.4852 3.8369 23.9415 3.34099 25.2783 3.21067C26.5973 3.08209 28.1187 3.29028 29.2403 4.41187Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_6_543"><rect width="48" height="48" fill="white"></rect></clipPath>
+                </defs>
+              </svg>
+            </div>
+            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Muntaha Nazir Dar</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-[12px]">
+            <div id="nav" class="flex items-center gap-9">
+              <a class="text-white text-sm font-medium leading-normal" href="#home">Home</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#about">About</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#skills">Skills</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#experience">Experience</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#education">Education</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#contact">Contact</a>
+            </div>
+           <a href="files/Muntaha-Resume.pdf" download=""> <button
+               id="btn-pdf" class="flex min-w-[84px] sm:max-w-[300px] lg:max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#019863]
+              text-[#111818] text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate">Download PDF</span>
+            </button>
+            </a>
+          </div>
+        </header>
+        <div id="home" class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="flex p-4 @container">
+              <div class="flex w-full flex-col gap-4 items-center">
+                <div class="flex gap-4 flex-col items-center">
+                  <div id="profile"
+                    class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBzf8KUTlYj72VOdlAkqyEVuugYAxpxkSzQel7lRqjX-yIqfbEgn_84Puvuxte_SYJE4yUNG4JfVetxJCd7iiNJQI2LfPNIrk8E0SE0Wt1vmhT6fp3X2SR8JxIYBx5GISAMUuldiQi92YpHh269I1NzaSA_iyBQVyTm9Mdj3dDVuUSk20VyZK8zrhHJTR8PRbTw0p02N_fBayHa7zGzK5_q78IqymxbL3qgDJNq_ScRQnRgD5k-eDI3pEcaOJe1a9ZE6ghdqV0tjR2r");'
+                  ></div>
+                  <div class="flex flex-col items-center justify-center justify-center">
+                    <p class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">Muntaha Nazir Dar</p>
+                    <p class="text-[#9db8b8] text-base font-normal leading-normal text-center">Sales Officer & Reservation Manger</p>
+                    <p class="text-[#9db8b8] text-base font-normal leading-normal text-center">
+                      Experienced Sales Officer with a proven track record of exceeding targets and driving revenue growth. Adept at building strong client relationships and
+                      identifying new business opportunities.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Contact Information</h2>
+            <div class="p-4 grid grid-cols-[20%_1fr] gap-x-6">
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3c5353] py-5">
+                <p class="text-[#9db8b8] text-sm font-normal leading-normal">Phone</p>
+                <p class="text-white text-sm font-normal leading-normal">+91-8492935928</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3c5353] py-5">
+                <p class="text-[#9db8b8] text-sm font-normal leading-normal">Email</p>
+                <p class="text-white text-sm font-normal leading-normal">xayembhat@gmail.com</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3c5353] py-5">
+                <p class="text-[#9db8b8] text-sm font-normal leading-normal">Location</p>
+                <p class="text-white text-sm font-normal leading-normal">AiwaKadal, Soura, Srinagar, Jammu & Kashmir</p>
+              </div>
+            </div>
+            <h2 id="about" class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Core Skills</h2>
+            <div class="flex gap-3 p-3 flex-wrap pr-4">
+              <div id="circul" class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#293838] pl-4 pr-4">
+                <p class="text-white text-sm font-medium leading-normal">Sales Strategy</p>
+              </div>
+              <div id="circul" class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#293838] pl-4 pr-4">
+                <p class="text-white text-sm font-medium leading-normal">Client Relationship Management</p>
+              </div>
+              <div id="circul" class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#293838] pl-4 pr-4">
+                <p class="text-white text-sm font-medium leading-normal">Lead Generation</p>
+              </div>
+              <div id="circul" class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#293838] pl-4 pr-4">
+                <p class="text-white text-sm font-medium leading-normal">Negotiation</p>
+              </div>
+              <div id="circul" class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-[#293838] pl-4 pr-4">
+                <p class="text-white text-sm font-medium leading-normal">Market Analysis</p>
+              </div>
+            </div>
+            <h2 id="skills" class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">About Me</h2>
+            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
+            My name is <b>Muntaha Nazir Dar</b>, a highly motivated and results-driven Sales Officer with extensive experience working across multiple companies in both B2B and B2C environments. Over the years, I have developed a strong passion for understanding market trends, customer behavior, and competitive positioning to help drive consistent revenue growth. My journey in the sales industry has allowed me to work with diverse teams and clients, giving me valuable exposure to various sectors including retail, travel, and services. <br/> <br/> 
+
+          I pride myself on being a strategic thinker with strong interpersonal and communication skills, capable of identifying client needs and offering effective, customized solutions. I have a proven record of exceeding sales targets, closing high-value deals, and contributing to company profitability through innovative sales strategies and persistent follow-ups. My adaptability and willingness to learn have helped me stay relevant in the fast-paced and evolving sales landscape.
+          <br/> <br/>
+
+          Beyond numbers, I am a strong believer in relationship-based selling, where trust, reliability, and consistent service build long-term client loyalty. I thrive in performance-driven environments, and I’m always keen on taking new challenges that push my limits and expand my professional capabilities. I am now seeking opportunities where I can further apply my expertise, contribute to organizational goals, and grow as a valuable part of a forward-thinking team.
+            </p>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Skills</h2>
+            <div class="pb-3">
+              <div class="flex border-b border-[#3c5353] px-4 gap-8">
+                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-white text-white pb-[13px] pt-4" href="#">
+                  <p class="text-white text-sm font-bold leading-normal tracking-[0.015em]">Professional Skills</p>
+                </a>
+                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#9db8b8] pb-[13px] pt-4" href="#">
+                  <p class="text-[#9db8b8] text-sm font-bold leading-normal tracking-[0.015em]">Soft Skills</p>
+                </a>
+              </div>
+            </div>
+            <div class="p-4 grid grid-cols-[20%_1fr] gap-x-6">
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3c5353] py-5">
+                <p class="text-[#9db8b8] text-sm font-normal leading-normal">Sales Strategy</p>
+                <p class="text-white text-sm font-normal leading-normal">Develop and implement effective sales strategies to achieve revenue targets.</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3c5353] py-5">
+                <p class="text-[#9db8b8] text-sm font-normal leading-normal">Client Relationship Management</p>
+                <p class="text-white text-sm font-normal leading-normal">Build and maintain strong relationships with clients to ensure satisfaction and loyalty.</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3c5353] py-5">
+                <p class="text-[#9db8b8] text-sm font-normal leading-normal">Lead Generation</p>
+                <p class="text-white text-sm font-normal leading-normal">Identify and qualify potential leads through various channels.</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3c5353] py-5">
+                <p class="text-[#9db8b8] text-sm font-normal leading-normal">Negotiation</p>
+                <p class="text-white text-sm font-normal leading-normal">Negotiate contracts and close deals to maximize profitability.</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3c5353] py-5">
+                <p class="text-[#9db8b8] text-sm font-normal leading-normal">Market Analysis</p>
+                <p class="text-white text-sm font-normal leading-normal">Analyze market trends and competitor activities to identify opportunities and threats.</p>
+              </div>
+            </div>
+            <div class="pb-3">
+              <div class="flex border-b border-[#3c5353] px-4 gap-8">
+                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#9db8b8] pb-[13px] pt-4" href="#">
+                  <p class="text-[#9db8b8] text-sm font-bold leading-normal tracking-[0.015em]">Professional Skills</p>
+                </a>
+                <a class="flex flex-col items-center justify-center border-b-[3px] border-b-white text-white pb-[13px] pt-4" href="#">
+                  <p class="text-white text-sm font-bold leading-normal tracking-[0.015em]">Soft Skills</p>
+                </a>
+              </div>
+            </div>
+            <div class="p-4 grid grid-cols-[20%_1fr] gap-x-6">
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3c5353] py-5">
+                <p class="text-[#9db8b8] text-sm font-normal leading-normal">Communication</p>
+                <p class="text-white text-sm font-normal leading-normal">Excellent verbal and written communication skills to effectively interact with clients and colleagues.</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3c5353] py-5">
+                <p class="text-[#9db8b8] text-sm font-normal leading-normal">Problem-solving</p>
+                <p class="text-white text-sm font-normal leading-normal">Strong analytical and problem-solving abilities to address client challenges and find solutions.</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3c5353] py-5">
+                <p class="text-[#9db8b8] text-sm font-normal leading-normal">Adaptability</p>
+                <p class="text-white text-sm font-normal leading-normal">Ability to adapt to changing market conditions and client needs.</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3c5353] py-5">
+                <p class="text-[#9db8b8] text-sm font-normal leading-normal">Teamwork</p>
+                <p class="text-white text-sm font-normal leading-normal">Collaborative team player with a focus on achieving common goals.</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3c5353] py-5">
+                <p class="text-[#9db8b8] text-sm font-normal leading-normal">Time Management</p>
+                <p class="text-white text-sm font-normal leading-normal">Effective time management skills to prioritize tasks and meet deadlines.</p>
+              </div>
+            </div>
+            <h2 id="experience" class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Experience</h2>
+            <div class=" grid grid-cols-[40px_1fr] gap-x-2 px-4">
+              <div class="  flex flex-col items-center gap-1 pt-3">
+                <div class="  text-white" data-icon="Briefcase" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v41.61A184,184,0,0,1,128,136a184.07,184.07,0,0,1-88-22.38V72Zm0,128H40V131.64A200.19,200.19,0,0,0,128,152a200.25,200.25,0,0,0,88-20.37V200ZM104,112a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H112A8,8,0,0,1,104,112Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="  w-[1.5px] bg-[#3c5353] h-2 grow"></div>
+              </div>
+              <div class=" flex flex-1 flex-col py-3">
+                <p class="text-white text-base font-medium leading-normal">Maharib Travels</p>
+                <p class="text-[#9db8b8] text-base font-normal leading-normal">2025 - Present</p>
+              </div>
+              
+              <div class="flex flex-col items-center gap-1 pb-3">
+                <div class="w-[1.5px] bg-[#3c5353] h-2"></div>
+                <div class="text-white" data-icon="Briefcase" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v41.61A184,184,0,0,1,128,136a184.07,184.07,0,0,1-88-22.38V72Zm0,128H40V131.64A200.19,200.19,0,0,0,128,152a200.25,200.25,0,0,0,88-20.37V200ZM104,112a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H112A8,8,0,0,1,104,112Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="flex flex-1 flex-col py-3">
+                <p class="text-white text-base font-medium leading-normal">Telacious Tour & Travels</p>
+                <p class="text-[#9db8b8] text-base font-normal leading-normal">2025 </p>
+              </div>
+            </div>
+
+             <div class=" grid grid-cols-[40px_1fr] gap-x-2 px-4">
+              <div class="  flex flex-col items-center gap-1 pt-3">
+                <div class="  text-white" data-icon="Briefcase" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v41.61A184,184,0,0,1,128,136a184.07,184.07,0,0,1-88-22.38V72Zm0,128H40V131.64A200.19,200.19,0,0,0,128,152a200.25,200.25,0,0,0,88-20.37V200ZM104,112a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H112A8,8,0,0,1,104,112Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="  w-[1.5px] bg-[#3c5353] h-2 grow"></div>
+              </div>
+              <div class=" flex flex-1 flex-col py-3">
+                <p class="text-white text-base font-medium leading-normal">Eden Resorts & Spa</p>
+                <p class="text-[#9db8b8] text-base font-normal leading-normal">2024-2025</p>
+              </div>
+              
+              <div class="flex flex-col items-center gap-1 pb-3">
+                <div class="w-[1.5px] bg-[#3c5353] h-2"></div>
+                <div class="text-white" data-icon="Briefcase" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v41.61A184,184,0,0,1,128,136a184.07,184.07,0,0,1-88-22.38V72Zm0,128H40V131.64A200.19,200.19,0,0,0,128,152a200.25,200.25,0,0,0,88-20.37V200ZM104,112a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H112A8,8,0,0,1,104,112Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="flex flex-1 flex-col py-3">
+                <p class="text-white text-base font-medium leading-normal">Jolly Holidays</p>
+                <p class="text-[#9db8b8] text-base font-normal leading-normal">2023</p>
+              </div>
+            </div>
+            <h2 id="education" class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Education</h2>
+            <div class="grid grid-cols-[40px_1fr] gap-x-2 px-4">
+              <div class="  flex flex-col items-center gap-1 pt-3">
+                <div class="text-white" data-icon="GraduationCap" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="w-[1.5px] bg-[#3c5353] h-2 grow"></div>
+              </div>
+              <div class="flex flex-1 flex-col py-3">
+                <p class="text-white text-base font-medium leading-normal">Bachelor Of Arts (BA)</p>
+                <p class="text-[#9db8b8] text-base font-normal leading-normal">Womans College, Nawa Kadal, 2025</p>
+              </div>
+
+              <div class="  flex flex-col items-center gap-1 pt-3">
+                <div class="text-white" data-icon="GraduationCap" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="w-[1.5px] bg-[#3c5353] h-2 grow"></div>
+              </div>
+              <div class="flex flex-1 flex-col py-3">
+                <p class="text-white text-base font-medium leading-normal">11th Plus 12th Standard</p>
+                <p class="text-[#9db8b8] text-base font-normal leading-normal">Govt Girls Higher Secondary, Soura (2021)</p>
+              </div>
+
+              <div class="flex flex-col items-center gap-1 pb-3">
+                <div class="w-[1.5px] bg-[#3c5353] h-2"></div>
+                <div class="text-white" data-icon="GraduationCap" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="flex flex-1 flex-col py-3">
+                <p class="text-white text-base font-medium leading-normal">10th Standard</p>
+                <p class="text-[#9db8b8] text-base font-normal leading-normal">Royal House Academy, 2019</p>
+              </div>
+            </div>
+            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Declaration: I hereby declare that the information provided above is true and accurate to the best of my knowledge.
+            </p>
+            <p class="text-[#9db8b8] text-sm font-normal leading-normal pb-3 pt-1 px-4">Muntaha Nazir Dar</p>
+            <div class="flex justify-end overflow-hidden px-5 pb-5">
+             <a target="_blank" href="mailto:xayembhat@gmail.com?subject=Job Opportunity For You&body=Hey, Let's connect to discuss!"> <button
+               id="cont" class="fixed left-[88%] top-[75%] flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 bg-[#019863] text-[#111818] text-base font-bold leading-normal tracking-[0.015em] min-w-0 px-2 gap-4 pl-4 pr-6"
+              >
+                <div class="text-white" data-icon="Envelope" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+              </a>
+            </div>
+            <div class="flex justify-end overflow-hidden px-5 pb-5">
+              <a target="_blank" href="tel:8492935928"><button
+               id="cont" class="fixed left-[88%] top-[83%] flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 bg-[#019863] text-[#111818] text-base font-bold leading-normal tracking-[0.015em] min-w-0 px-2 gap-4 pl-4 pr-6"
+              >
+                <div class="text-white" data-icon="Phone" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+              </a>
+            </div>
+            <div class="flex justify-end overflow-hidden px-5 pb-5">
+             <a target="_blank" href="https://wa.link/xzf6ue">  <button
+               id="cont" class="fixed left-[88%] top-[91%] flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 bg-[#019863] text-[#111818] text-base font-bold leading-normal tracking-[0.015em] min-w-0 px-2 gap-4 pl-4 pr-6"
+              >
+                <div class="text-white" data-icon="WhatsappLogo" data-size="24px" data-weight="regular">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                    <path
+                      d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.61-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+  </body>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+
+<!-- <script>
+  function downloadPDF() {
+    // Select the full page content or a specific container
+    const element = document.querySelector('body'); // Or use a wrapper like #resume
+
+    // Remove floating buttons/fixed elements before converting
+    document.querySelectorAll('.fixed, .sticky, #btn-pdf, #cont').forEach(el => el.style.display = 'none');
+
+    const opt = {
+      margin:       0.3,
+      filename:     'Muntaha_Nazir_Dar_Resume.pdf',
+      image:        { type: 'jpeg', quality: 1 },
+      html2canvas:  {
+        scale: 2,
+        useCORS: true,
+        scrollX: 0,
+        scrollY: 0,
+        windowWidth: document.documentElement.scrollWidth,
+        windowHeight: document.documentElement.scrollHeight
+      },
+      jsPDF: {
+        unit: 'in',
+        format: 'a4',
+        orientation: 'portrait'
+      },
+      pagebreak: {
+        mode: ['css', 'legacy'],
+        avoid: ['.no-page-break', '.fixed', '#btn-pdf', '#cont'],
+        before: ['.page-break']
+      }
+    };
+
+    // Create the PDF
+    html2pdf().set(opt).from(element).save().then(() => {
+      // Restore visibility if needed
+      document.querySelectorAll('.fixed, .sticky, #btn-pdf, #cont').forEach(el => el.style.display = '');
+    });
+  }
+</script> -->
+</html>
